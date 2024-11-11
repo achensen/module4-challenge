@@ -7,6 +7,7 @@ backButton.addEventListener('click',() => {
     window.history.back();
 });
 
+
 // TODO: Create a function that builds an element and appends it to the DOM
 // function createAndAppendElement(){
 //     const 
