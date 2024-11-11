@@ -26,9 +26,9 @@ function storeLocalStorage(newData){
 
 // ! Use the following function whenever you need to redirect to a different page
 
-let redirectURL = '';
+let redirectURL = 'index.html';
 
-const redirectPage = function (url) {
+const redirectPage = function () {
   redirectURL = url;
   location.assign(url);
 };
