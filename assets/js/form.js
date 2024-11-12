@@ -25,22 +25,17 @@ function inputCheck(event){
             content: content,
         
         };
+// TODO: Create a function that handles the form submission. Grab the form data and store it in local storage,
+        storeLocalStorage(formInfo) 
 
-        function storeLocalStorage(formInfo) {
-            localStorage.setItem('formInfo', JSON.stringify(formInfo));
-            console.log('info saved');
-
-}
-
-        window.location.href = 'blog.html'
-
+        // function storeLocalStorage(formInfo) { 
+        // localStorage.setItem('formInfo', JSON.stringify(formInfo));
+        // console.log('info saved');
+        // }
+// then redirect to the blog page using the `redirectPage` function.
+        redirectPage(redirectURL)
+        // window.location.href = 'blog.html'
     }
 }
-
-
-
-// TODO: Create a function that handles the form submission. Grab the form data and store it in local storage, 
-// then redirect to the blog page using the `redirectPage` function.
-
 // TODO: Add an event listener to the form on submit. Call the function to handle the form submission.
 formEl.addEventListener('submit', inputCheck)

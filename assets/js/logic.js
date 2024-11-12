@@ -17,7 +17,8 @@ function readLocalStorage(){
 function storeLocalStorage(newData){
   let formInfo = JSON.parse(localStorage.getItem('formInfo')) || [];
 
-  formInfo.push(newData);
+  formInfo = formInfo.concat(newData)
+  // formInfo.push(newData);
 
   localStorage.setItem('formInfo',JSON.stringify(formInfo));
 
@@ -26,9 +27,9 @@ function storeLocalStorage(newData){
 
 // ! Use the following function whenever you need to redirect to a different page
 
-let redirectURL = 'index.html';
+let redirectURL = 'blog.html';
 
 const redirectPage = function () {
-  redirectURL = url;
-  location.assign(url);
+  redirectURL = 'blog.html';
+  location.assign('blog.html');
 };
