@@ -1,4 +1,19 @@
 // TODO: Create logic to toggle the light/dark mode styles for the page and circle. The mode should be saved to local storage.
+const toggleButton = document.getElementById('toggle');
+
+if(localStorage.getItem('theme') ==='dark'{
+    document.body.classList.add('dark');
+}
+
+toggleButton.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+
+    if (document.body.classList.contains('dark')){
+      localStorage.setItem ('theme', 'dark');
+    }else {
+      localStorage.setItem('theme', 'light');
+    }
+});
 
 
 // TODO: Create a function called `readLocalStorage` that reads from local storage and returns the data. If no data exists, return an empty array.
@@ -9,7 +24,7 @@ function readLocalStorage(){
     return JSON.parse(savedInfo);
   }else {
     console.log('No localStorage Data');
-    return null;
+    return [];
   }
 }
 
@@ -17,12 +32,18 @@ function readLocalStorage(){
 function storeLocalStorage(newData){
   let formInfo = JSON.parse(localStorage.getItem('formInfo')) || [];
 
+    if (!Array.isArray(newData)) {
+      newData = [newData];
+    }
+
   formInfo = formInfo.concat(newData)
   // formInfo.push(newData);
 
   localStorage.setItem('formInfo',JSON.stringify(formInfo));
 
   console.log('New data added to localStorage');
+
+  redirectPage()
 }
 
 // ! Use the following function whenever you need to redirect to a different page
