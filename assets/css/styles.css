@@ -95,6 +95,15 @@ main {
 /*
   Classes
 */
+.dark{
+  /* background-color:gray; */
+}
+
+.light{
+  /* background-color: #f9f9fb; */
+}
+
+
 .dark header,
 .dark footer {
   background-color: var(--dark);

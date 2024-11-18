@@ -39,27 +39,7 @@ backButton.addEventListener('click',() => {
 //         <button id="toggle">Toggle Light/Dark Mode</button>
 //         <!-- light mode dark mode toggle  -->
 
-//         <button id="back">Back</button>
 
-//     </header>
-
-//     <main>
-//       <article>
-//         <blockquote></blockquote>
-//         <h2></h2>
-//         <p></p>
-//       </article>
-
-//     </main>
-
-//     <footer>
-        
-//     </footer>
-//   <!-- TODO: Create header, main, and footer elements -->
-
-// </body>
-
-// </html>
 
 
 
