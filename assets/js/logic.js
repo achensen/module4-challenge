@@ -1,6 +1,7 @@
 // TODO: Create logic to toggle the light/dark mode styles for the page and circle. The mode should be saved to local storage.
 const toggleButton = document.getElementById('toggle');
 
+
 let lightMode = true
 
 function lightModeDarkMode(){
@@ -60,7 +61,9 @@ toggleButton.addEventListener('click', lightModeDarkMode);
 
 
 // // TODO: Create logic to toggle the light/dark mode styles for the page and circle. The mode should be saved to local storage.
-// const toggleButton = document.getElementById('toggle');
+function readLocalStorage(){
+  return localStorage.getItem()
+}
 
 // if (localStorage.getItem('theme')) === 'dark' {
 //     document.body.classList.add('dark');
@@ -107,11 +110,11 @@ toggleButton.addEventListener('click', lightModeDarkMode);
 //   redirectPage()
 // }
 
-// // ! Use the following function whenever you need to redirect to a different page
+// ! Use the following function whenever you need to redirect to a different page
 
-// let redirectURL = 'blog.html';
+let redirectURL = 'blog.html';
 
-// const redirectPage = function () {
-//   redirectURL = 'blog.html';
-//   location.assign('blog.html');
-// };
+const redirectPage = function (redirectURL) {
+  redirectURL = 'blog.html';
+  location.assign('blog.html');
+};
