@@ -15,8 +15,7 @@ function lightModeDarkMode(){
     document.body.classList.remove('dark')
     document.body.classList.add('light')
   }
-  // var element = document.body
-  // element.classList.toggle()
+ 
   console.log('Button Connected')
 }
 
@@ -36,8 +35,8 @@ function readLocalStorage(){
 function storeLocalStorage(newData){
   let formInfo = JSON.parse(localStorage.getItem('formInfo')) || [];
 
-  formInfo = formInfo.concat(newData)
-  // formInfo.push(newData);
+  formInfo = formInfo.concat(newData);
+ 
 
   localStorage.setItem('formInfo',JSON.stringify(formInfo));
 
@@ -46,12 +45,12 @@ function storeLocalStorage(newData){
 
 // ! Use the following function whenever you need to redirect to a different page
 
-let redirectURL = 'blog.html';
+// let redirectURL = 'blog.html';
 
-const redirectPage = function () {
-  redirectURL = 'blog.html';
-  location.assign('blog.html');
-};
+// const redirectPage = function () {
+//   redirectURL = 'blog.html';
+//   location.assign('blog.html');
+// };
 
 
 
@@ -61,9 +60,7 @@ toggleButton.addEventListener('click', lightModeDarkMode);
 
 
 // // TODO: Create logic to toggle the light/dark mode styles for the page and circle. The mode should be saved to local storage.
-function readLocalStorage(){
-  return localStorage.getItem()
-}
+function 
 
 // if (localStorage.getItem('theme')) === 'dark' {
 //     document.body.classList.add('dark');

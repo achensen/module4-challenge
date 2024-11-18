@@ -106,7 +106,7 @@ main {
 }
 
 .circle{
-  color: var(--circlecolor);
+  color: var(--circle-color);
 }
 
 .dark header,
