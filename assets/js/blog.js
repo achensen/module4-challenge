@@ -33,7 +33,11 @@ backButton.addEventListener('click',() => {
 //   <script defer src="./assets/js/blog.js" type="text/javascript"></script>
 // </head>
 
-
+// <body>
+//     <header>
+//         <h1>My First Blog</h1>
+//         <button id="toggle">Toggle Light/Dark Mode</button>
+//         <!-- light mode dark mode toggle  -->
 
 
 
